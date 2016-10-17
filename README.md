@@ -15,8 +15,8 @@ Descrição do projeto
 Modo de instalação
 -----------------
 ```
-    git clone https://github.com/Processos-de-software-2016-2/Web-App.git
-´´´
+    1. git clone https://github.com/Processos-de-software-2016-2/Web-App.git
+```
 
 Funcionalidades
 -----------------
@@ -24,6 +24,6 @@ Funcionalidades
 Versão atual
 -----------------
 ```
-    - Versão atual: 0.0
-    - Última atualização: 00/00
-´´´
+    1. Versão atual: 0.0
+    2. Última atualização: 00/00
+```
