@@ -5,7 +5,7 @@ Integrantes
 -----------------
 
 - Ademir Bezerra
-- Laércio
+- Francisco Laércio de Morais
 - Will
 - Nayana
 
