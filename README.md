@@ -1,15 +1,29 @@
 Web-App
 =================
 
-# Integrantes
+Integrantes
+-----------------
 
 - Ademir Bezerra
 - Laércio
 - Will
 - Nayana
 
-# Descrição do projeto
+Descrição do projeto
+-----------------
 
-# Modo de instalação
+Modo de instalação
+-----------------
+```
+    git clone https://github.com/Processos-de-software-2016-2/Web-App.git
+´´´
 
-# Funcionalidades
+Funcionalidades
+-----------------
+
+Versão atual
+-----------------
+```
+    - Versão atual: 0.0
+    - Última atualização: 00/00
+´´´
