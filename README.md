@@ -4,13 +4,32 @@ Web-App
 Integrantes
 -----------------
 
-- Ademir Bezerra
-- Francisco Laércio de Morais
-- Willyelns Xavier
-- Nayana 
+- [Ademir Bezerra] (https://github.com/ademir2011)
+- [Laércio Morais] (https://github.com/laerciom1)
+- [Nayana] (https://github.com/nfarias)
+- [Willyelns Xavier] (https://github.com/willyelns)
 
 Descrição do projeto
 -----------------
+
+O projeto consiste em uma plataforma onde os usuários poderão trocar conhecimento. Pode ser desde aprender a tocar violão, a aprender o básico de uma linguagem de programação, onde haverá uma troca, ou seja, dado que você vai ensinar algo a alguém, espera-se que você aprenda algo em troca com essa pessoa.
+
+Algumas das principais funcionalidades:
+```
+	- Buscar pessoas utilizando como filtro:
+		- Nome do usuário
+		- Interesses
+		- Habilidades
+	- Conectar pessoas:
+		- Baseado em seus interesses e habilidades
+		- Recomendação de usuários
+	- Cadastro de interesses e habilidades
+	- Histórico de experiências/conexões (contatos anteriores com os outros usuários)
+	- Avaliação de experiências/conexões
+	- Status do usuário (disponível/indisponível)
+	- Perfil do usuário (onde estarão centralizadas todas as suas informações)
+	- Chat 
+```
 
 Modo de instalação
 -----------------
