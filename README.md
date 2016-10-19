@@ -6,8 +6,10 @@ Integrantes
 
 - [Ademir Bezerra] (https://github.com/ademir2011)
 - [Laércio Morais] (https://github.com/laerciom1)
+- [Luiz Arthur] (https://github.com/arthurfreire)
 - [Nayana] (https://github.com/nfarias)
 - [Willyelns Xavier] (https://github.com/willyelns)
+
 
 Descrição do projeto
 -----------------
