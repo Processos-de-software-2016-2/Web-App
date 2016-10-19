@@ -15,9 +15,7 @@ Integrantes
 Descrição do projeto
 -----------------
 
-```
 O projeto consiste em uma plataforma onde os usuários poderão trocar conhecimento. Pode ser desde aprender a tocar violão, a aprender o básico de uma linguagem de programação, onde haverá uma troca, ou seja, dado que você vai ensinar algo a alguém, espera-se que você aprenda algo em troca com essa pessoa.
-```
 
 Modo de instalação
 -----------------
@@ -29,9 +27,7 @@ Modo de instalação
 Tecnologia Utilizada
 ----------------
 
-```
 * [React.JS] (https://facebook.github.io/react/docs/getting-started.html)
-```
 
 Funcionalidades
 -----------------
