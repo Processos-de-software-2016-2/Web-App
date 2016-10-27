@@ -1,63 +1,6 @@
 Web-App
 =================
 
-Team Members
------------------
-- [Ademir Bezerra] (https://github.com/ademir2011)
-- [Laércio Morais] (https://github.com/laerciom1)
-- [Luiz Arthur] (https://github.com/arthurfreire)
-- [Nayana Farias] (https://github.com/nfarias)
-- [Willyelns Xavier] (https://github.com/willyelns)
-
-About the project
------------------
-The project is a platform in which the users will be able to exchange knowledge through. You can learn from playing the guitar to the basics of a programming language, in which there will be a knowledge exchange, meaning that since you will be teaching someone else, it is expected that you too will be learning from your study partner.
-
-Installation
------------------
-
-```
-    1. git clone https://github.com/Processos-de-software-2016-2/Web-App.git
-```
-
-
-Used technologies
-----------------
-
-* [React.JS] (https://facebook.github.io/react/docs/getting-started.html)
-
-
-Features
------------------
-
-* Search users by using the filters:
-	* Username
-	* Interests
-	* Skills
-* Connection between users:
-	* Based on interests and skills
-	* Users recommendations
-* Interests and skills registration
-* Experiences or connection history (previous contact with other users)
-* Experiences or connections rating
-* User status (available/unavailable)
-* User profile (with all of the personal informations)
-* Chat option
-
-
-Current version
------------------
-
-```
-    1. Current version: 0.0
-    2. Latest update: 00/00
-```
-
-___
-
-Web-App
-=================
-
 Integrantes
 -----------------
 
@@ -82,9 +25,10 @@ Modo de instalação
 ```
 
 
-Tecnologia Utilizada
+Referências
 ----------------
 
+* [Agency](https://startbootstrap.com/template-overviews/agency/) - bootstrap template
 * [React.JS] (https://facebook.github.io/react/docs/getting-started.html)
 
 
@@ -110,6 +54,6 @@ Versão atual
 -----------------
 
 ```
-    1. Versão atual: 0.0
-    2. Última atualização: 00/00
+    1. Versão atual: 0.1
+    2. Última atualização: 26/10/2016
 ```
