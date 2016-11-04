@@ -1,42 +1,35 @@
+/*@import "compass/css3";*/
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Sans-serif;
-  background: #2c3e50;
-}
+  background: #2c3e50; }
 
 #wrap {
-  margin: 0 auto 30px;
-}
+  margin: 0 auto 30px; }
 
 #regbar {
   height: 67px;
-  background: #34495e;
-}
+  background: #34495e; }
 
 #navthing {
-  margin-left: 50px;
-}
+  margin-left: 50px; }
 
 h2 {
   padding: 20px;
-  color: #ecf0f1;
-}
+  color: #ecf0f1; }
 
 fieldset {
-  border: none;
-}
+  border: none; }
 
 .login {
   position: relative;
   width: 350px;
-  display: none;
-}
+  display: none; }
 
 .arrow-up {
   width: 0;
@@ -46,58 +39,103 @@ fieldset {
   border-bottom: 15px solid #ECF0F1;
   left: 10%;
   position: absolute;
-  top: -10px;
-}
+  top: -10px; }
 
 .formholder {
   background: #ecf0f1;
   width: 350px;
   border-radius: 5px;
-  padding-top: 5px;
-}
-.formholder input[type="email"], .formholder input[type="password"] {
-  padding: 7px 5px;
-  margin: 10px 0;
-  width: 96%;
-  display: block;
-  font-size: 18px;
-  border-radius: 5px;
-  border: none;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-.formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
-  outline: none;
-  box-shadow: 0 0 1px 1px #1abc9c;
-}
-.formholder input[type="submit"] {
-  background: #1abc9c;
-  padding: 10px;
-  font-size: 20px;
-  display: block;
-  width: 100%;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-}
-.formholder input[type="submit"]:hover {
-  background: #1bc6a4;
-}
+  padding-top: 5px; }
+  .formholder input[type="email"], .formholder input[type="password"] {
+    padding: 7px 5px;
+    margin: 10px 0;
+    width: 96%;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear; }
+    .formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+      outline: none;
+      box-shadow: 0 0 1px 1px #1abc9c; }
+  .formholder input[type="submit"] {
+    background: #1abc9c;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 5px; }
+    .formholder input[type="submit"]:hover {
+      background: #1bc6a4; }
 
 .randompad {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .green {
-  color: #1abc9c;
-}
+  color: #1abc9c; }
 
 a {
   color: #ecf0f1;
-  text-decoration: none;
-}
-a:hover {
-  color: #1abc9c;
-}
+  text-decoration: none; }
+  a:hover {
+    color: #1abc9c; }
+
+.div-interesse {
+  width: 75%;
+  background: transparent;
+  border-radius: 5px;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #FED136;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: x-large;
+  float: none;
+  margin: 0 auto; }
+
+.input-interesse {
+  width: 95%;
+  position: absolute;
+  left: 0px;
+  background: transparent;
+  border-radius: 5px 0px 0px 5px;
+  height: 50px;
+  border: 3px solid #FED136;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: x-large;
+  float: none;
+  margin: 0 auto;
+  padding-left: 10px; }
+
+.label-insere-tag {
+  background: #FED136;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #FED136;
+  border-radius: 0px 5px 5px 0px;
+  right: 0px;
+  position: absolute;
+  cursor: pointer; }
+
+.icon-plus {
+  font-size: 30px;
+  margin-top: 7px; }
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ECE; }
+
+.tags {
+  font-size: large;
+  margin-top: 10px; }
+
+.continue-button {
+  color: black;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tinder do Habilidoso - Interesses</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+
+    <!-- General Styles-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Scripts-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Bem vindo ao Tinder do Habilidoso!</div>
+            <div class="intro-heading">O quê você tem interesse em aprender?</div>
+            <div class="row-fluid input-append div-interesse col-lg-6">
+                <input type="text" class="input-interesse" placeholder="Ex: Música">
+                <label class="label-insere-tag">
+                    <i class="icon-plus fa fa-plus" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div class="tags">
+                <input id="tag-input" type="text" data-role="tagsinput"/>
+            </div>
+            <a href="#prox_pagina" class="continue-button page-scroll btn btn-xl">Continuar</a>
+        </div>
+    </div>
+
+    <script>
+        $('.input-interesse').bind("enterKey",function(e){
+            $('.label-insere-tag').click();
+        });
+        $('.input-interesse').keyup(function(e){
+            if(e.keyCode == 13)
+            {
+                $(this).trigger("enterKey");
+            }
+        });
+
+        $('.label-insere-tag').click(function() {
+            var novatag = $('.input-interesse').val();
+            $('#tag-input').tagsinput('add', novatag);
+            $('.input-interesse').val("");
+        });
+    </script>
+</header>
+</body>
+</html>
