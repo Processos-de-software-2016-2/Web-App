@@ -1,4 +1,4 @@
-@import "compass/css3";
+/*@import "compass/css3";*/
 
 * {
 margin: 0;
@@ -112,4 +112,63 @@ a {
   &:hover {
       color: #1abc9c;
     }
+}
+
+.div-interesse{
+  width: 75%;
+  background: transparent;
+  border-radius: 5px;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #FED136;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: x-large;
+  float: none;
+  margin: 0 auto;
+}
+
+.input-interesse{
+  width: 95%;
+  position: absolute;
+  left: 0px;
+  background: transparent;
+  border-radius: 5px 0px 0px 5px;
+  height: 50px;
+  border: 3px solid #FED136;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: x-large;
+  float: none;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+
+.label-insere-tag{
+  background: #FED136;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #FED136;
+  border-radius: 0px 5px 5px 0px;
+  right: 0px;
+  position: absolute;
+  cursor: pointer;
+}
+.icon-plus{
+  font-size: 30px;
+  margin-top: 7px;
+}
+
+input:focus{
+  outline: none !important;
+
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.tags{
+  font-size: large;
+  margin-top: 10px;
+}
+.continue-button{
+  color: black;
+  margin-top: 10px;
 }
