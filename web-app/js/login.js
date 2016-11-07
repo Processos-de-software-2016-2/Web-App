@@ -1,3 +1,18 @@
+function accountValidadeLogin(){
+
+	// Get elements
+	txtEmail = document.getElementById('txtEmail').value;
+	txtPassword = document.getElementById('txtPassword').value;
+
+	if(txtEmail == "" || txtPassword == ""){
+		alert( "Algum campo está vazio" );
+	} else {
+	}
+
+	window.location.replace("./dashboard/index.html");
+
+}
+
 (function() {
 
 	// Initialize Firebase
@@ -16,7 +31,7 @@
 	  const btnLogin = document.getElementById('btnLogin');
 
 	  // Add login event
-	  btnLogin.addEventListener('click', e => {
+	  /*btnLogin.addEventListener('click', e => {
 	  	// Get email and pass
 	  	const email = txtEmail.value;
 	  	const pass = txtPassword.value;
@@ -27,7 +42,7 @@
 	  		window.location.replace("user_home_notok.html");
 	  		console.log(e.message);
 	  	});
-	  });
+	  });*/
 
 	  // Add a realtime listener
 	  firebase.auth().onAuthStateChanged(firebaseUser => {
