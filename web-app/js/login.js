@@ -9,7 +9,7 @@ function accountValidadeLogin(){
 	} else {
 	}
 
-	window.location.replace("./dashboard/index.html");
+	window.location.replace("homepage/user_home_ok.html");
 
 }
 
@@ -48,7 +48,7 @@ function accountValidadeLogin(){
 	  firebase.auth().onAuthStateChanged(firebaseUser => {
 	  	if(firebaseUser){
 	  		console.log(firebaseUser);
-	  		window.location.replace("user_home_ok.html");
+	  		window.location.replace("homepage/user_home_ok.html");
 	  	}
 	  	else{
 	  		console.log('not logged in');
