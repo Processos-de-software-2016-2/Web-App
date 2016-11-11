@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastrar Usuário</title>
+
+		<meta charset="utf-8">
+
+		<!-- Compiled and minified CSS -->
+	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+	  	<!-- Icons -->
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	  	<!-- JQuery link -->
+	  	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+		<!-- Compiled and minified JavaScript -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	     
+	    <script src="js/script.js"></script>      
+
+	</head>
+	<body class="grey lighten-5">
+
+		<nav>
+		  <div class="nav-wrapper  grey darken-4 ">
+		    <a href="index.html" class="brand-logo">Logo</a>
+   	        <ul id="nav-mobile" class="right hide-on-med-and-down">
+		     <li><a href="cadastro.html">Cadastrar Usuário</a></li>
+		     <li><a href="users.html">listar Usuários</a></li>
+	         <li><a href="#login">login</a></li>
+	        </ul>
+   	      </div>
+		</nav>
+
+		<div class="row">
+			<div class="col s12">
+				<h3 class="center">Home</h3>
+			</div>
+		</div>
+
+		<div class="slider" style="height: 100%;">
+		    <ul class="slides">
+		      <li>
+		        <img src="https://pixabay.com/static/uploads/photo/2015/01/08/18/25/startup-593327_960_720.jpg"> <!-- random image -->
+		        <div class="caption center-align">
+		          <h3>Lorem Ipsum</h3>
+		          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet.</h5>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="https://pixabay.com/static/uploads/photo/2015/02/03/14/05/bass-622598_960_720.jpg"> <!-- random image -->
+		        <div class="caption left-align">
+		          <h3 class="light grey-text text-darken-3">Sit amet</h3>
+		          <h5 class="light grey-text text-darken-3">Lorem ipsum dolor sit amet.</h5>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+
+		<!-- Modal Login -->
+		<div id="login" class="modal">
+		    <div class="modal-content">
+		      <h4 class="center">login</h4>
+		      <div class="row">
+		      	<div class="input-field col s6 offset-s3">
+		      		<input type="email" id="emailLogin" class="validate">
+		      		<label for="email" data-erro="E-mail inválido" data-success="E-mail válido">E-mail</label>
+		      	</div>
+		      </div>
+		       <div class="row">
+		      	<div class="input-field col s6  offset-s3">
+		      		<input type="password" id="passwordLogin">
+		      		<label for="password" >Senha</label>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" id="btnLogin" class=" waves-effect waves-yellow btn-flat">Logar</a>
+		      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+		    </div>
+		  </div>
+
+	</body>
+</html>

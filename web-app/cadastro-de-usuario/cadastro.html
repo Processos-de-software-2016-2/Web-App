@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastrar Usuário</title>
+
+		<meta charset="utf-8">
+
+		<!-- Compiled and minified CSS -->
+	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+	  	<!-- Icons -->
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	  	<!-- JQuery link -->
+	  	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+		<!-- Compiled and minified JavaScript -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	     
+	    <script src="js/script.js"></script>      
+
+	</head>
+	<body class="grey lighten-5">
+
+		<nav>
+		  <div class="nav-wrapper  grey darken-4 ">
+		    <a href="index.html" class="brand-logo">Logo</a>
+   	        <ul id="nav-mobile" class="right hide-on-med-and-down">
+		     <li><a href="signUp.html">Cadastrar Usuário</a></li>
+		     <li><a href="users.html">listar Usuários</a></li>
+	         <li><a href="#login">login</a></li>
+	        </ul>
+   	      </div>
+		</nav>
+
+		<div class="row">
+			<div class="col s12">
+				<h3 class="center">Cadastrar Usuário</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6 offset-s3">
+			  <i class="material-icons prefix">account_circle</i>
+	          <input id="name" type="text" class="validate" maxlength="20" length="20">
+	          <label for="name">Nome</label>
+	        </div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6 offset-s3">
+			  <i class="material-icons prefix">email</i>
+	          <input id="email" type="email" class="validate">
+	          <label for="email" data-error="E-mail inválido" data-success="E-mail válido">E-mail</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s6 offset-s3">
+			  <i class="material-icons prefix">vpn_key</i>
+	          <input id="password" type="password" class="validate" maxlength="16" minlength="9" length="16">
+	          <label for="password" data-error="Senha inválida" data-success="Senha válida">Senha</label>
+			</div>
+		</div>
+
+		<!--<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">today</i>
+				<input id="birthday" type="date" placeholder="Data de nascimento" class="datepicker">
+			</div>
+		</div>-->
+
+		<div class="row">
+			<div class="input-field col s6 offset-s3">
+				<i class="material-icons prefix">today</i>
+				<input type="number" id="age" maxlength="2" class="validate">
+				<label for="age" data-error="Idade inválida" data-success="Idade válida">Idade</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s6 offset-s3">
+				<a id="btnSignUp" class="waves-effect waves-light btn right yellow darken-1 grey-text text-darken-4" onclick=""><i class="material-icons right">play_arrow</i>Sign up</a>
+			</div>
+		</div>
+
+
+		<!-- Modal Login -->
+		<div id="login" class="modal">
+		    <div class="modal-content">
+		      <h4 class="center">login</h4>
+		      <div class="row">
+		      	<div class="input-field col s6 offset-s3">
+		      		<input type="email" id="emailLogin" class="validate">
+		      		<label for="email" data-erro="E-mail inválido" data-success="E-mail válido">E-mail</label>
+		      	</div>
+		      </div>
+		       <div class="row">
+		      	<div class="input-field col s6  offset-s3">
+		      		<input type="password" id="passwordLogin">
+		      		<label for="password" >Senha</label>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" id="btnLogin" class=" waves-effect waves-yellow btn-flat">Logar</a>
+		      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+		    </div>
+		  </div>
+
+	</body>
+</html>
