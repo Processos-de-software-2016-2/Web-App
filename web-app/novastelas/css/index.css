@@ -1,0 +1,33 @@
+body {
+	font-family: Tahoma;
+	margin: 40px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #44ABFF;
+}
+
+button {
+	margin-top: 100px;
+	width: 150px;
+	height: 35px;
+	color: white;
+	background-color: #13578C;
+	border: 0px;
+}
+
+table {
+	margin-top: 100px;
+}
+
+button.hover {
+	background-color: #13578C;
+}
+
+.tableHeaderText{
+	color: #13578C;
+}
+
+.tableHeaderSubText{
+	color: #44ABFF;
+}
