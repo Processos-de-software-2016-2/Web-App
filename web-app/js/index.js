@@ -1,25 +1,33 @@
-$('input[type="submit"]').mousedown(function(){
-  $(this).css('background', '#2ecc71');
+$( document ).ready(function() {
+//Modal
+	$('.modal').modal();
+
+	//sign in user
+	$('#btnLogin').click(function(){
+
+		var data = {'email': $('#emailLogin').val(), 'password':$('#passwordLogin').val()}
+
+		console.log('data to login: ' + JSON.stringify(data));
+
+		$.ajax({
+	        url: "http://159.203.75.66:8000/login",
+	        data: data,
+	        dataType: 'json',
+	        type: 'POST',
+	        success: function(data) {
+	            console.log(data);
+	            Materialize.toast('Usuário logado com sucesso!', 2000);
+				$('#login').modal('close');
+	        },
+	        error: function(data) {
+	            Materialize.toast('Erro inesperado. Tente novamente mais tarde!', 2000);
+	            console.log(data);
+	        }
+	    });		
+	});
+
 });
-$('input[type="submit"]').mouseup(function(){
-  $(this).css('background', '#1abc9c');
-});
 
-$('#loginform').click(function(){
-  $('.login').fadeToggle('slow');
-  $(this).toggleClass('green');
-});
-
-
-
-$(document).mouseup(function (e)
-{
-    var container = $(".login");
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.hide();
-        $('#loginform').removeClass('green');
-    }
-});
+function f() {
+	alert("teste");
+}
