@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trocando Habilidades</title>
+
+
+    <!-- Scripts-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+
+    <style>
+        .navbar {
+            float: none;
+            margin: 0 auto;
+            height: 25px;
+            width: 70%;
+        }
+
+        .info_pessoal {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: auto;
+            width: 70%;
+            left: 17%;
+        }
+
+        #menuhor {
+            position: relative;
+            margin: 0 auto;
+            font: 20px Arial, sans-serif;
+            height: 100%;
+            min-height: 100%;
+            display: -webkit-flex;
+            display: flex;
+            /*left: 35%*/
+        }
+
+        #menuhor li {
+            list-style: none;
+            margin: 0;
+            display: inline;
+        }
+        #menuhor li a {
+            padding: 5px 35px 5px 35px;
+            margin: 0;
+            border: 1px solid #696969;
+            background: #FFF;
+            text-decoration: none;
+        }
+        #menuhor li a:link {
+            color: #13578C;
+        }
+        #menuhor li a:visited {
+            color: #13578C;
+        }
+        #menuhor li a:hover {
+            background: #13578C;
+            color: #FFF;
+            border-color: #000;
+        }
+
+        .trade {
+            font: 40px Arial, sans-serif;
+            font-weight: bold;
+            color: #13578C;
+            height: 100%;
+            min-height: 100%;
+            text-align: center
+        }
+
+        .cadastro {
+            font: 30px Arial, sans-serif;
+            color: #44ABFF;
+            height: 100%;
+            min-height: 100%;
+            text-align: center
+        }
+
+        .cadastro2 {
+            font: 30px Arial, sans-serif;
+            font-weight: bold;
+            color: #13578C;
+            height: 100%;
+            min-height: 100%;
+            text-align: center
+        }
+
+        #foto {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            margin-bottom: 8px;
+            left: 30%;
+        }
+
+        #foto button {
+            position: absolute;
+            margin: 2%;
+            background-image: -webkit-linear-gradient(top,  #44ABFF, #13578C);
+            background-image: -moz-linear-gradient(top,  #44ABFF, #13578C);
+            background-image: -ms-linear-gradient(top,  #44ABFF, #13578C);
+            background-image: -o-linear-gradient(top,  #44ABFF, #13578C);
+            background-image: linear-gradient(to bottom,  #44ABFF, #13578C);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            text-shadow: 1px 1px 3px #666666;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        #foto button:hover {
+            background-image: -webkit-linear-gradient(top,  #44ABFF, #106bb0);
+            background-image: -moz-linear-gradient(top,  #44ABFF, #106bb0);
+            background-image: -ms-linear-gradient(top,  #44ABFF, #106bb0);
+            background-image: -o-linear-gradient(top,  #44ABFF, #106bb0);
+            background-image: linear-gradient(to bottom,  #44ABFF, #106bb0);
+            text-decoration: none;
+        }
+
+        #info_pessoal_form input[type=text] {
+            height: 25%;
+            width: 35%;
+            padding: 5px;
+            margin-bottom: 8px;
+            position: relative;
+            left: 30%;
+            font: 20px Arial, sans-serif;
+        }
+
+        #captcha {
+            height: auto;
+            width: auto;
+            position: relative;
+            margin-bottom: 8px;
+            left: 30%;
+            align-self: center;
+        }
+
+        #captcha input {
+            position: relative;
+            height: 57%;
+            width: 26.2%;
+            padding: 5px;
+            top: -14px;
+            font: 20px Arial, sans-serif;
+        }
+
+        #agree {
+            position: relative;
+            font: 20px Arial, sans-serif;
+            left: 34%;
+        }
+
+        #continue button {
+            position: relative;
+            padding: 5px 5px 5px 5px;
+            margin-top: 40px;
+            left: 43%;
+            background: #29c211;
+            background-image: -webkit-linear-gradient(top, #29c211, #184706);
+            background-image: -moz-linear-gradient(top, #29c211, #184706);
+            background-image: -ms-linear-gradient(top, #29c211, #184706);
+            background-image: -o-linear-gradient(top, #29c211, #184706);
+            background-image: linear-gradient(to bottom, #29c211, #184706);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        #continue button:hover {
+            background: #29c211;
+            background-image: -webkit-linear-gradient(top, #29c211, #267308);
+            background-image: -moz-linear-gradient(top, #29c211, #267308);
+            background-image: -ms-linear-gradient(top, #29c211, #267308);
+            background-image: -o-linear-gradient(top, #29c211, #267308);
+            background-image: linear-gradient(to bottom, #29c211, #267308);
+            text-decoration: none;
+        }
+
+        .div_assuntos input[type=text]{
+            height: 25%;
+            width: 40%;
+            padding: 5px;
+            margin-bottom: 8px;
+            position: relative;
+            left: 30%;
+            font: 20px Arial, sans-serif;
+        }
+
+        #interesses{
+            margin-bottom: 70px;
+        }
+        #habilidades{
+             margin-bottom: 70px;
+         }
+
+        .continue{
+            float: none;
+            margin: 0 auto;
+            width: 130px;
+            background: #00CC00;
+            color: white;
+            font-family: tahoma bold;
+            border-radius: 5px;
+            height: 40px;
+            line-height: 40px;
+            font: 23px Arial, sans-serif;
+            padding-top: 13px;
+            padding-left: 9px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar">
+    <ul id="menuhor">
+        <li>
+            <a href="#" title="Home">Home</a>
+        </li>
+        <li>
+            <a href="#" title="Login">Login</a>
+        </li>
+        <li>
+            <a href="#" title="Cadastro">Cadastro</a>
+        </li>
+        <li>
+            <a href="#" title="O que é">O que é?</a>
+        </li>
+        <li>
+            <a href="#" title="Sobre nós">Sobre nós</a>
+        </li>
+        <li>
+            <a href="#" title="Contato">Contato</a>
+        </li>
+    </ul>
+</nav>
+<section class="info_pessoal">
+    <div id="title">
+        <h2 class="trade">Trocando habilidades</h2>
+        <h3 class="cadastro">Cadastro de interesses e habilidades</h3>
+    </div>
+    <br>
+    <div id="interesses" class="div_assuntos">
+        <h3 class="cadastro2">O quê você deseja aprender?</h3>
+        <input type="text" name="interesses" id="input-interesses" placeholder="Insira aqui o quê você deseja aprender"><br>
+        <div class="tags-interesses" style="text-align: center">
+            <input id="tag-input-interesses" type="text" data-role="tagsinput"/>
+        </div>
+    </div>
+
+    <div id="habilidades"  class="div_assuntos">
+        <h3 class="cadastro2">O quê você pode ensinar?</h3>
+        <input type="text" name="habilidades" id="input-habilidades" placeholder="Insira aqui o quê você deseja aprender"><br>
+        <div class="tags-habilidades" style="text-align: center">
+            <input id="tag-input-habilidades" type="text" data-role="tagsinput"/>
+        </div>
+    </div>
+
+    <div class="continue">
+        CONCLUIR
+    </div>
+</section>
+
+<script>
+
+    $('#input-interesses').bind("enterKey",function(e){
+        var numeroinicial = $( ".label-info" ).length;
+        var novatag = $('#input-interesses').val();
+        $('#tag-input-interesses').tagsinput('add', novatag);
+        var numerofinal = $( ".label-info" ).length;
+        if(numerofinal > numeroinicial){
+            $('.label-info').last().css("display","none");
+            $('.label-info').last().fadeIn("slow");
+            $('#input-interesses').val("");
+        }
+    });
+    $('#input-interesses').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            $(this).trigger("enterKey");
+        }
+    });
+
+    $('#input-habilidades').bind("enterKey",function(e){
+        var numeroinicial = $( ".label-info" ).length;
+        var novatag = $('#input-habilidades').val();
+        $('#tag-input-habilidades').tagsinput('add', novatag);
+        var numerofinal = $( ".label-info" ).length;
+        if(numerofinal > numeroinicial){
+            $('.label-info').last().css("display","none");
+            $('.label-info').last().fadeIn("slow");
+            $('#input-habilidades').val("");
+        }
+    });
+    $('#input-habilidades').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            $(this).trigger("enterKey");
+        }
+    });
+
+
+</script>
+</body>
+</html>
