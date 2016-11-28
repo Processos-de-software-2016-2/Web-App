@@ -1,6 +1,25 @@
 $(document).ready(function(){
-    $('#cadastroHabilidade').click(function(){
-    	
+
+	$('.bootstrap-tagsinput input').css('display','none');
+	$('.label-info').css('font-size','105%');
+
+	$('#cadastroHabilidade').click(function(){
+
+		var numeroinicial = $( ".label-info" ).length;
+		var novatag = $('#name-habilidade').val();
+		$('#tag-input-habilidades').tagsinput('add', novatag);
+		var numerofinal = $( ".label-info" ).length;
+		if(numerofinal > numeroinicial){
+			$('.label-info').last().css("display","none");
+			$('.label-info').last().fadeIn("slow");
+			$('#name-habilidade').val("");
+		}
+
+	});
+
+	/*CADASTRAR HABILIDADES OLD
+	$('#cadastroHabilidade').click(function(){
+
     	var table = document.getElementById('tableHabilidades');
 		// Insert a row in the table at the last row
 		var row = table.insertRow(0);
@@ -9,13 +28,27 @@ $(document).ready(function(){
 
 		cell1.style.background = "#fed136";
 		cell1.style.color = "#fff";
-		cell1.innerHTML = $("#name").val();
+		cell1.innerHTML = $("#name-habilidade").val();
 
     });
+	*/
+
+	$('#name-habilidade').keyup(function(e){
+		if(e.keyCode == 13)
+		{
+			$(this).trigger("enterKey");
+		}
+	});
+
+	$('#name-habilidade').bind("enterKey",function(e){
+		$('#cadastroHabilidade').click();
+	});
+
 
     $('#buscaHabilidade').click(function(){
 
     	var table = document.getElementById('tableHabilidades');
+		$('#tableHabilidades').css('color','white');
 		// Insert a row in the table at the last row
 		var row = table.insertRow(1);
 
