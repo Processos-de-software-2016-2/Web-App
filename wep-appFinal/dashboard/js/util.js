@@ -15,6 +15,7 @@ $(document).ready(function(){
 			$('#name-habilidade').val("");
 		}
 
+		//Mandando para a API...
 	});
 
 	/*CADASTRAR HABILIDADES OLD
@@ -62,5 +63,30 @@ $(document).ready(function(){
 
     });
 
+	$('#btnRegister').click(function(){
+		var data = {
+			'name': 'O LINDÃO',
+			'email': 'luizarthurfreire@gmail.com',
+			'age': '22',
+			'password': 'senha123'
+		};
+
+		console.log("Data to send: " + JSON.stringify(data));
+
+		$.ajax({
+			url: "http://159.203.75.66:8000/user",
+			data: data,
+			dataType: 'json',
+			type: 'POST',
+			success: function(data) {
+				console.log(data);
+				Materialize.toast('Usuário Cadastrado com Sucesso', 2000);
+			},
+			error: function(data) {
+				console.log(data);
+				Materialize.toast('Erro inesperado. Tente novamente mais tarde!', 2000);
+			}
+		});
+	});
 
 });
