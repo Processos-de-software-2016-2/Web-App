@@ -17,7 +17,7 @@ p {
 }
 
 a, a:hover, a:focus {
-	color: #30a5ff;
+	color: #fed136;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,7 +95,7 @@ h3, h4 {
 }
 
 .navbar-header .navbar-brand span {
-	color: #30a5ff;
+	color: #fed136;
 }
 
 /*Buttons*/
@@ -132,9 +132,9 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-	background-color: #e9ecf2;
-	border-color: #e9ecf2;
-	color: #1b3548;
+	background-color: #fed136;
+	border-color: #fed136;
+	color: #fff;
 }
 
 .btn-primary,
@@ -304,7 +304,7 @@ a.bg-danger:hover {
 .panel-default .panel-heading {
 	background: #fff;
 	border-bottom: 1px solid #eee;
-	color: #5f6468;
+	color: #fed136;
 }
 
 .panel-footer {
@@ -569,7 +569,7 @@ a.bg-danger:hover {
 .sidebar ul.nav .active > a:hover, .sidebar ul.nav li.parent a.active:hover,
 .sidebar ul.nav .active > a:focus, .sidebar ul.nav li.parent a.active:focus {
 	color: #fff;
-	background-color: #30a5ff;
+	background-color: #fed136;
 }*/
 
 .sidebar ul.nav ul,
@@ -592,7 +592,7 @@ a.bg-danger:hover {
 }
 
 .sidebar ul.nav li.current a {
-	background-color: #30a5ff;
+	background-color: #fed136;
 	color: #fff!important;
 }
 

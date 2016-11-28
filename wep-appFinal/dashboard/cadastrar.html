@@ -48,8 +48,8 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html" ><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
-			<li><a href="cadastrar.html"  onclick="util('conteudo')"><svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg> Cadastrar Habilidades</a></li>
+			<li ><a href="index.html" ><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+			<li class="active"><a href="cadastrar.html"  onclick="util('conteudo')"><svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg> Cadastrar Habilidades</a></li>
 			<li><a href="buscar.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"/></svg></svg> Buscar Habilidades</a></li>
 			<li><a href="perfil.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg> Editar perfil</a></li>
 		</ul>
@@ -58,7 +58,65 @@
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
 	 	
-		<!-- CONTEUDO -->
+
+	<!-- CONTEUDO -->
+
+		<br/>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+				<div class="panel-heading"><svg class="glyph stroked email"><use xlink:href="#stroked-email"></use></svg> Cadastro de Habilidades</div>
+				<div class="panel-body">
+					<div class="form-horizontal" >
+						<fieldset>
+							<!-- Name input-->
+							<div class="form-group">
+								<label class="col-md-3 control-label" for="name" style="color: #fed136;">Habilidade:</label>
+								<div class="col-md-9">
+									<input id="name" type="text" placeholder="Nome da habilidade" class="form-control">
+								</div>
+							</div>
+							
+							<!-- Form actions -->
+							<div class="form-group">
+								<div class="col-md-12">
+									<div class="col-md-4"></div>
+									<button id="cadastroHabilidade" type="submit" class="col-md-4 btn btn-default btn-md">Cadastrar</button>
+									<div class="col-md-4"></div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+
+		<br/>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Habilidades Cadastradas</div>
+					<div class="panel-body">
+						<table id="tableHabilidades" data-toggle="table" data-url="tables/data2.json" >
+						    <thead></thead>
+						    <tbody>
+						    	<tr>
+						    		<td style="text-align: center;"></td>
+						    	</tr>
+						    </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+
+
+	<!-- CONTEUDO -->
 
    	</div>
 
