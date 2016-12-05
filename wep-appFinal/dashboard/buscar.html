@@ -77,9 +77,9 @@
 						<fieldset>
 							<!-- Name input-->
 							<div class="form-group">
-								<label class="col-md-3 control-label" for="name" style="color: #fed136;">Habilidade:</label>
+								<label class="col-md-3 control-label" for="skill-searched" style="color: #fed136;">Habilidade:</label>
 								<div class="col-md-9">
-									<input id="name" type="text" placeholder="Nome da habilidade" class="form-control">
+									<input id="skill-searched" type="text" placeholder="Nome da habilidade" class="form-control">
 								</div>
 							</div>
 							
@@ -101,25 +101,29 @@
 
 		<br/>
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">Pessoas com a habilidade desejada</div>
+			<div class="col-md-8 col-md-offset-2">
+				<div id="painel-matches" class="panel panel-default" style="display: none">
+					<div class="panel-heading" id="div-habilidade-desejada"></div>
 					<div class="panel-body">
-						<table id="tableHabilidades" class="table-bordered" data-toggle="table">
+						<table id="tableHabilidades" data-toggle="table">
 						    <thead>
 						    	<tr style="color: white;">
-						    		<th style="text-align: center;color: #fed136;">Nome</th>
-						    		<th style="text-align: center;color: #fed136;">E-mail</th>
-						    		<th style="text-align: center;color: #fed136;">Telefone</th>
+						    		<th>Nome</th>
+						    		<th>E-mail</th>
+						    		<th>Telefone</th>
 						    	</tr>
 						    </thead>
 						    <tbody>
 						    	<tr>
-						    		<td></td>
-						    		<td></td>
-						    		<td></td>
+						    		<td>João da Silva</td>
+						    		<td>joaodasilva@gmail.com</td>
+						    		<td><a href="tel:+012345678">(84)99999-9999</a></td>
 						    	</tr>
+								<tr>
+									<td>Maria da Silva</td>
+									<td>mariadasilva@gmail.com</td>
+									<td><a href="tel:+012345678">(84)98888-8888</a></td>
+								</tr>
 						    </tbody>
 						</table>
 					</div>
