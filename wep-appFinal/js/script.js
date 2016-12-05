@@ -61,8 +61,8 @@ $( document ).ready(function() {
 		console.log('data to login: ' + JSON.stringify(data));
 
     if($("#emailLogin").val() === "imd@imd.ufrn.br" && $("#passwordLogin").val() === "123"){
-      toastr["success"]("Usuário logado com sucesso!");
       window.location.href = "../dashboard/index.html";
+      toastr["success"]("Usuário logado com sucesso!");
       return;
     }
     if($("#emailLogin").val() === "" || $("#passwordLogin").val() === ""){
@@ -76,7 +76,10 @@ $( document ).ready(function() {
 	        type: 'POST',
 	        success: function(data) {
 	            console.log(data);
-              toastr["success"]("Usuário logado com sucesso!");
+              if(data.response === 200){
+                window.location.href = "../dashboard/index.html";
+                toastr["success"]("Usuário logado com sucesso!");
+              }
 	        },
 	        error: function(data) {
 	            console.log(data);

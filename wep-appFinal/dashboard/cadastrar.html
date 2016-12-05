@@ -16,6 +16,12 @@
 <!--Icons-->
 <script src="js/lumino.glyphs.js"></script>
 
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
 </head>
 
 <body>
@@ -74,7 +80,15 @@
 							<div class="form-group">
 								<label class="col-md-3 control-label" for="name-habilidade" style="color: #fed136;">Habilidade:</label>
 								<div class="col-md-9">
-									<input id="name-habilidade" type="text" placeholder="Nome da habilidade" class="form-control">
+									<select id="name-habilidade" class="selectpicker">
+										<option>Escolha uma habilidade...</option>
+										<option>Violão</option>
+										<option>Programação</option>
+										<option>Pesca</option>
+										<option>Cantar</option>
+									</select>
+
+									<!--<input id="name-habilidade" type="text" placeholder="Nome da habilidade" class="form-control">-->
 								</div>
 							</div>
 
