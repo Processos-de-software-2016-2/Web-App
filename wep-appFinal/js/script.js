@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   var urlBase = "http://127.0.0.1:8000";
 
-	//Sign Up user
+	//Adiciona um usuário
 	$('#btnSignUp').click(function(){
 		var data = {
 			"name": $('#name').val(),
@@ -11,25 +11,49 @@ $( document ).ready(function() {
 			"password":$('#password').val()
 		};
 
+    var valido = true;
+
 		console.log("Data to send: " + JSON.stringify(data));
 
-		$.ajax({
-	        url: urlBase + "/user",
-	        data: data,
-	        dataType: 'json',
-	        type: 'POST',
-	        success: function(data) {
-	            console.log(data);
-              toastr["success"]("Usuário Cadastrado com Sucesso!");
-	        },
-	        error: function(data) {
-	            console.log(data);
-              toastr["Error"]("Erro inesperado. Tente novamente mais tarde!");
-	        }
-	    });
+    if($("#name").val() === ''){
+      toastr["warning"]("O campo nome é obrigatório!");
+      valido = false;
+    }
+    if($("#email").val() === ''){
+      toastr["warning"]("O campo email é obrigatório!");
+      valido = false;
+    }
+    if($("#age").val() === ''){
+      toastr["warning"]("O campo idade é obrigatório!");
+      valido = false;
+    }
+    if($("#password").val() === ''){
+      toastr["warning"]("O campo senha é obrigatório!");
+      valido = false;
+    }
+    if($("#password").val() !== $("repeatPassword").val()){
+      toastr["warning"]("A confirmação de senha está diferente da senha atual!");
+      valido = false;
+    }
+		if(valido){
+      $.ajax({
+  	        url: urlBase + "/user",
+  	        data: data,
+  	        dataType: 'json',
+  	        type: 'POST',
+  	        success: function(data) {
+  	            console.log(data);
+                toastr["success"]("Usuário Cadastrado com Sucesso!");
+  	        },
+  	        error: function(data) {
+  	            console.log(data);
+                toastr["error"]("Erro inesperado. Tente novamente mais tarde!");
+  	        }
+  	    });
+    }
 	});
 
-	//sign in user
+	//faz login
 	$('#btnLogin').click(function(){
 
 		var data = {"email": $('#emailLogin').val(), "password":$('#passwordLogin').val()}
