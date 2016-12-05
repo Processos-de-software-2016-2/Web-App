@@ -943,6 +943,25 @@ h1.page-header {
 	color: #222222;
 }
 
+#painel-matches table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#painel-matches th, td {
+	padding: 8px;
+	text-align: center;
+	color: #fed136;
+
+}
+
+#painel-matches tr:nth-child(even){background-color: currentColor}
+
+#painel-matches th {
+	background-color: #fed136;
+	color: black;
+}
+
 
 
 

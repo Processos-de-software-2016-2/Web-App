@@ -46,6 +46,7 @@ $(document).ready(function(){
 	});
 
 
+	/*
     $('#buscaHabilidade').click(function(){
 
     	var table = document.getElementById('tableHabilidades');
@@ -61,32 +62,65 @@ $(document).ready(function(){
 		cell2.innerHTML = "joao@gmail.com";
 		cell3.innerHTML = "(84) 9 98988484";
 
-    });
+    });*/
 
-	$('#btnRegister').click(function(){
+	$('#editarPerfil').click(function(){
+		var data2 = {
+			"interests": [],
+			"name": "Stefanocwegweg",
+			"skills": [],
+			"age": 20,
+			"id": 130,
+			"password": "",
+			"email": "stefano@teste.com"
+		}
+
 		var data = {
-			'name': 'O LINDÃO',
+			'name': 'O LINDAO',
 			'email': 'luizarthurfreire@gmail.com',
 			'age': '22',
 			'password': 'senha123'
 		};
 
-		console.log("Data to send: " + JSON.stringify(data));
+		console.log("Data to send: " + JSON.stringify(data2));
 
 		$.ajax({
 			url: "http://159.203.75.66:8000/user",
-			data: data,
+			data: data2,
 			dataType: 'json',
 			type: 'POST',
-			success: function(data) {
-				console.log(data);
-				Materialize.toast('Usuário Cadastrado com Sucesso', 2000);
+			success: function(data2) {
+				console.log(data2);
+				//Materialize.toast('Usuário Cadastrado com Sucesso', 2000);
 			},
-			error: function(data) {
-				console.log(data);
-				Materialize.toast('Erro inesperado. Tente novamente mais tarde!', 2000);
+			error: function(data2) {
+				console.log(data2);
+				//Materialize.toast('Erro inesperado. Tente novamente mais tarde!', 2000);
 			}
 		});
 	});
 
+	$('#buscaHabilidade').click(function(){
+		var texto = "Pessoas que tem habilidade em ";
+		var habilidade = $('#skill-searched').val();
+		texto = texto + '"' + habilidade + '"';
+
+		if(habilidade != ""){
+			$('#div-habilidade-desejada').text(texto);
+			$('#painel-matches').css("display","block");
+		}
+
+	});
+
+	$('#skill-searched').keyup(function(e){
+		if(e.keyCode == 13)
+		{
+			$(this).trigger("enterKey");
+		}
+	});
+
+	$('#skill-searched').bind("enterKey",function(e){
+		$('#buscaHabilidade').click();
+	});
 });
+
