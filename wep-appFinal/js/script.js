@@ -31,7 +31,7 @@ $( document ).ready(function() {
       toastr["warning"]("O campo senha é obrigatório!");
       valido = false;
     }
-    if($("#password").val() !== $("repeatPassword").val()){
+    if($("#password").val() !== $("#repeatPassword").val()){
       toastr["warning"]("A confirmação de senha está diferente da senha atual!");
       valido = false;
     }
