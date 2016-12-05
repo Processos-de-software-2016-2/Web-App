@@ -14,10 +14,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="../css/agency.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" title="no title">
+
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
     <script type="text/javascript" src="../dashboard/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../dashboard/js/util.js"></script>
-
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -41,11 +44,17 @@
                     <div class="row">
                         <div class="col-md-6">
                             <form action="javascript:void(0)" method="get">
-                                <h2 class="section-heading">Bem vindo!</h2>
-                                <input id="txtEmail" type="text" placeholder="E-mail"  class="form-control"><br/>
-                                <input id="txtPassword" type="password" placeholder="Senha"  class="form-control"><br/>
-                                <a id="btnRegister" class="btn btn-action btn-xl">Registrar</a><br/><br/>
-                                <a id="btnLogin" href="../dashboard/index.html" class="btn btn-action btn-xl">Entrar</a><br/>
+                                <h2 class="section-heading">Bem vindo ao Lurn!</h2>
+                                <input id="emailLogin" type="text" placeholder="E-mail"  class="form-control"><br/>
+                                <input id="passwordLogin" type="password" placeholder="Senha"  class="form-control"><br/>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <a id="btnLogin" class="btn btn-action btn-xl">Entrar</a><br/>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <a id="btnRegister" class="btn btn-action btn-xl">Registrar</a><br/><br/>
+                                  </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -66,8 +75,7 @@
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+                        <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
                     </ul>
                 </div>
                 <div class="col-md-4">
