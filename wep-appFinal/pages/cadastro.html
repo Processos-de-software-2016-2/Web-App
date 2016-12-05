@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Lurn</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="../css/agency.min.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <script type="text/javascript" src="../dashboard/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../dashboard/js/util.js"></script>
+
+</head>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="../index.html">Lurn</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Cadastro Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <form action="javascript:void(0)" method="get">
+                                <h2 class="section-heading">Realize seu cadastro!</h2>
+                                <input id="name" type="text" placeholder="Nome" class="form-control" required="true" requiredMessage="O nome é obrigatório"><br/>
+                                <input id="idade" type="number" placeholder="18" class="form-control" min="16" max="100" required="true" requiredMessage="A idade é obrigatória"><br/>
+                                <input id="txtEmail" type="email" placeholder="E-mail"  class="form-control" required="true" requiredMessage="O email é obrigatório"><br/>
+                                <input id="txtPassword" type="password" placeholder="Senha"  class="form-control" required="true" requiredMessage="A senha é obrigatória"><br/>
+                                <a id="btnRegister" class="btn btn-action btn-xl" href="../dashboard/perfil.html">Registrar</a><br/><br/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
