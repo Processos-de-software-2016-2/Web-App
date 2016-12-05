@@ -32,8 +32,6 @@ $( document ).ready(function() {
       valido = false;
     }
     if($("#password").val() !== $("#repeatPassword").val()){
-      console.log("password: " + $("#password").val());
-      console.log("repeatPassword: " + $("#repeatPassword").val());
       toastr["warning"]("A confirmação de senha está diferente da senha atual!");
       valido = false;
     }
