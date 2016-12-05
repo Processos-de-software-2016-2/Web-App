@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  var urlBase = "http://127.0.0.1:8000";
+  var urlBase = "http://localhost";
 
 	//Adiciona um usuário
 	$('#btnSignUp').click(function(){
